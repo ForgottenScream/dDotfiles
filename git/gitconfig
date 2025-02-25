@@ -2,4 +2,4 @@
 	email = 150345575+ForgottenScream@users.noreply.github.com
 	name = ForgottenScream
 [core]
-	pager = diff-so-fancy | less --tabs=4 - RFX
+	pager = diff-so-fancy | less --tabs=4 -RFX
