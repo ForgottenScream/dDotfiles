@@ -8,6 +8,13 @@ mkdir -p "$XDG_CONFIG_HOME/nvim/undo"
 ln -sf "$DOTFILES/nvim/init.vim" "$XDG_CONFIG_HOME/nvim"
 
 #######
+# Git #
+#######
+mkdir -p "$XDG_CONFIG_HOME/git"
+ln -sf "$DOTFILES/git/gitconfig" "$XDG_CONFIG_HOME/git/config"
+
+
+#######
 # X11 #
 #######
 rm -rf "$XDG_CONFIG_HOME/X11"
