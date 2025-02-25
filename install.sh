@@ -40,5 +40,5 @@ cp -rf "$DOTFILES/fonts" "$XDG_DATA_HOME"
 #########
 # Dunst #
 #########
-mkdir -p "$KDG_CONFIG_HOME/dunst"
-ln- sf "$DOTFILES/dunst/dunstrc" "$XDG_CONFIG_HOME/dunst/dunstrc"
+mkdir -p "$XDG_CONFIG_HOME/dunst"
+ln -sf "$DOTFILES/dunst/dunstrc" "$XDG_CONFIG_HOME/dunst/dunstrc"

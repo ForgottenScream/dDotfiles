@@ -32,3 +32,4 @@ for index ({1..9}) alias "$index"="cd +${index}"; unset index
 alias ga='git add'
 alias gc='git commit'
 alias gp='git push'
+alias book='zathura ~/mullvad-browser/Browser/Downloads/Building\ your\ Mouseless\ Development\ Environment\ --\ Matthieu\ Cneude\ --\ 1,\ 2021.pdf&'
