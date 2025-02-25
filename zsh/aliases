@@ -27,7 +27,7 @@ alias removepicmp3='eyeD3 --remove-all-images'
 #ZSH Aliases
 alias d='dirs -v'
 for index ({1..9}) alias "$index"="cd +${index}"; unset index
-
+alias n='nvim'
 #Git Aliases
 alias ga='git add'
 alias gc='git commit'
