@@ -223,7 +223,7 @@ client.urgent $red1 $red1 $white2 $red1 $red1
 client.placeholder #000000 #0c0c0c $white2 #000000 #0c0c0c
 
 # Install ttf-droid for this font
-font pango: Droid Sans Mono 11
+font pango:Inconsolata Nerd Font 12 
 
 # Display Wallpaper
 exec_always feh --no-fehbg --bg-fill /usr/share/backgrounds/backgroundLM8.jpeg
@@ -251,6 +251,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 
 # Autostart Applications
 exec --no-startup-id keepassxc
+exec --no-startup-id dunst
 
 # Assign applications to workspaces
 assign [class="UXTerm"] workspace $terminal
