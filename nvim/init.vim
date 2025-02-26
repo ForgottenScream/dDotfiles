@@ -1,9 +1,11 @@
-set clipboard+=unnamedplus
+nnoremap <space> <nop>
+let mapleader = "\<space>"
 
-noremap <Up> <Nop>
-noremap <Down> <Nop>
-noremap <Left> <Nop>
-noremap <Right> <Nop>
+nnoremap <leader>bn :bn<cr> ;buffer next
+nnoremap <leader>tn gt ;new tab
+nnoremap <leader>wq :wq<cr> ;writes and quits 
+
+set clipboard+=unnamedplus
  
 " no swap file
 set noswapfile
