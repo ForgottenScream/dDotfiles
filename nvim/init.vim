@@ -30,3 +30,8 @@ set softtabstop=4
 set shiftwidth=4
 
 set hidden
+
+" Plugins 
+call plug#begin("XDG_CONFIG_HOME/nvim/plugged")
+    Plug 'chrisbra/csv.vim'
+call plug#end()
