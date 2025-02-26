@@ -57,8 +57,13 @@ ln -sf "$DOTFILES/dunst/dunstrc" "$XDG_CONFIG_HOME/dunst/dunstrc"
     && curl -fLo "$DOTFILES/nvim/autoload/plug.vim" --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 mkdir -p "$XDG_CONFIG_HOME/nvim/autoload"
-ln -sf $DOTFILES/nvim/autoload/plug.vim" "$XDG_CONFIG/HOME/nvim/autoload/plug.vim"
+ln -sf "$DOTFILES/nvim/autoload/plug.vim" "$XDG_CONFIG/HOME/nvim/autoload/plug.vim"
 
-#Install (or update) all the plugins
+Install (or update) all the plugins
 nvim --noplugin +PlugUpdate +qa
 
+########
+# Tmux #
+########
+mkdir -p "$XDG_CONFIG_HOME/tmux"
+ln -sf "$DOTFILES/tmux/tmux.conf" "$XDG_CONFIG_HOME/tmux/tmux.conf"
