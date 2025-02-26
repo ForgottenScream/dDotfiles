@@ -35,6 +35,6 @@ alias gp='git push'
 alias book='zathura ~/mullvad-browser/Browser/Downloads/Building\ your\ Mouseless\ Development\ Environment\ --\ Matthieu\ Cneude\ --\ 1,\ 2021.pdf&'
 
 #Tmux Aliases
-alias tmuxa='tmux attach-session -tg
+alias tmuxa='tmux attach-session -t'
 alias tmuxl='tmux list-session'
 alias tmuxs='tmux new-session -s' # tmuxs <session_name>

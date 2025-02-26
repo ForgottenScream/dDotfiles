@@ -59,7 +59,7 @@ ln -sf "$DOTFILES/dunst/dunstrc" "$XDG_CONFIG_HOME/dunst/dunstrc"
 mkdir -p "$XDG_CONFIG_HOME/nvim/autoload"
 ln -sf "$DOTFILES/nvim/autoload/plug.vim" "$XDG_CONFIG/HOME/nvim/autoload/plug.vim"
 
-Install (or update) all the plugins
+#Install (or update) all the plugins
 nvim --noplugin +PlugUpdate +qa
 
 ########
