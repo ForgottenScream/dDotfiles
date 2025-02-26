@@ -35,6 +35,8 @@ set hidden
 call plug#begin("XDG_CONFIG_HOME/nvim/plugged")
     Plug 'chrisbra/csv.vim'
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    Plug 'ms-jpq/chadtree', {'branch': 'chad', 'do': 'python3 -m chadtree deps'}
+    Plug 'wellle/tmux-complete.vim'
 call plug#end()
 
 autocmd BufRead,BufWritePost *.csv :%ArrangeColumn!

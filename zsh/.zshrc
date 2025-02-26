@@ -61,3 +61,5 @@ fi
 #Needs to be sourced last so everything else needs to be above ^^^#
 ###################################################################
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+[ -f "/home/n/.ghcup/env" ] && . "/home/n/.ghcup/env" # ghcup-env
