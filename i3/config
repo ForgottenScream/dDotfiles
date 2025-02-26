@@ -135,17 +135,16 @@ bindsym $mod+p mode "resize"
 # Terminal scratchpad
 for_window [instance="urxvt_scratchpad"] move to scratchpad, border none
 bindsym $mod+Shift+t [instance="urxvt_scratchpad"] scratchpad show
-exec urxvtc -name urxvt_scratchpad
+exec urxvtc -name urxvt_scratchpad \
+-e tmux new-session -d -s scratchpad \; \
+new-window -n vim 'nvim +e /tmp/nvim-tmp.md' \; \
+attach-session -d -t scratchpad
 
 # btop scratchpad
 for_window [instance="btop_scratchpad"] move to scratchpad, border none
 bindsym $mod+Shift+g [instance="btop_scratchpad"] scratchpad show
 exec urxvtc -name btop_scratchpad -e btop
 
-# kew scratchpad
-for_window [instance="kew_scratchpad"] move to scratchpad, border none
-bindsym $mod+Shift+k [instance="kew_scratchpad"] scratchpad show
-exec urxvtc -name kew_scratchpad -e kew
 
 # Start i3bar to display a workspace bar
 bar {
