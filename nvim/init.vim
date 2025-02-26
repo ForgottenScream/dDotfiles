@@ -5,6 +5,8 @@ nnoremap <leader>bn :bn<cr> ;buffer next
 nnoremap <leader>tn gt ;new tab
 nnoremap <leader>wq :wq<cr> ;writes and quits 
 
+nnoremap <leader>t :CHADopen<cr>
+
 set clipboard+=unnamedplus
  
 " no swap file
@@ -37,6 +39,8 @@ call plug#begin("XDG_CONFIG_HOME/nvim/plugged")
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'ms-jpq/chadtree', {'branch': 'chad', 'do': 'python3 -m chadtree deps'}
     Plug 'wellle/tmux-complete.vim'
+    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+    Plug 'junegunn/fzf.vim'
 call plug#end()
 
 autocmd BufRead,BufWritePost *.csv :%ArrangeColumn!
