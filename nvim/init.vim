@@ -34,6 +34,7 @@ set hidden
 " Plugins 
 call plug#begin("XDG_CONFIG_HOME/nvim/plugged")
     Plug 'chrisbra/csv.vim'
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
 autocmd BufRead,BufWritePost *.csv :%ArrangeColumn!
