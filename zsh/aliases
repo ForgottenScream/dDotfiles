@@ -13,7 +13,7 @@ alias q='exit'
 alias shred='shred -vfzu'
 
 #Useful Aliases
-alias tool='curl -fsSl https://christitus.com/linux | sh'
+alias tool='curl -fsSL https://christitus.com/linux | sh'
 
 #i3 Based Aliases
 alias i3config='nvim "$DOTFILES/i3/config"'

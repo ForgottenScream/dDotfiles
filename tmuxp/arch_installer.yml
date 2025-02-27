@@ -2,11 +2,11 @@ session_name: arch_installer
 start_directory: $HOME/workspace/arch_installer
 
 windows:
-  - window_name: nvim
+  - window_name: nvim arch_installer
     layout: tiled
     panes:
       - nvim
-  - window_name: terms
+  - window_name: terms 
     layout: tiled
     panes:
       - 
