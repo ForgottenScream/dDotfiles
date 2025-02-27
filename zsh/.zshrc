@@ -26,8 +26,8 @@ autoload -Uz cursor_mode && cursor_mode
 
 # bindings to align with tmux config
 bindkey -r '^l'
-bindkey -r '^d'
-bindkey -s '^d' 'clear\n'
+bindkey -r '^u'
+bindkey -s '^u' 'clear\n'
 
 # vim mapping for completion
 zmodload zsh/complist
