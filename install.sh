@@ -37,7 +37,7 @@ ln -s "$HOME/dotfiles/i3" "$HOME/.config"
 mkdir -p "$HOME/.config/zsh"
 ln -sf "$HOME/dotfiles/zsh/.zshenv" "$HOME"
 ln -sf "$HOME/dotfiles/zsh/.zshrc" "$HOME/.config/zsh"
-ln -sf "$HOME/dotfiles/zsh/aliases" "$HOME/.config/zsh/aliases"
+gn -sf "$HOME/dotfiles/zsh/aliases" "$HOME/.config/zsh/aliases"
 rm -rf "$HOME/.config/zsh/external"
 ln -sf "$HOME/dotfiles/zsh/external" "$HOME/.config/zsh"
 
@@ -64,4 +64,4 @@ ln -sf "$HOME/dotfiles/tmux/tmux.conf" "$HOME/.config/tmux/tmux.conf"
 
 [ ! -d "$HOME/.config/tmux/plugins" ] \
 && git clone https://github.com/tmux-plugins/tpm \
-
+"$HOME/.config/tmux/plugins/tpm"
