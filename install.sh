@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Set XDG_CONFIG_HOME if not already set
+: "${XDG_CONFIG_HOME:=$HOME/.config}"
+
 ########
 # nvim #
 ########
