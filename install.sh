@@ -4,21 +4,21 @@
 # nvim #
 ########
 
-mkdir -p "$XDG_CONFIG_HOME/nvim"
-mkdir -p "$XDG_CONFIG_HOME/nvim/undo"
+mkdir -p "$HOME/.config/nvim"
+mkdir -p "$HOME/.config/nvim/undo"
 
-ln -sf "$DOTFILES/nvim/init.vim" "$XDG_CONFIG_HOME/nvim"
+ln -sf "$HOME/dotfiles/nvim/init.vim" "$HOME/.config/nvim"
 
-rm -rf "$XDG_CONFIG_HOME/X11"
-ln -s "$DOTFILES/X11" "$XDG_CONFIG_HOME"
+rm -rf "$HOME/.config/X11"
+ln -s "$HOME/dotfiles/X11" "$HOME/.config"
 
 # install neovim plugin manager
-[ ! -f "$DOTFILES/nvim/autoload/plug.vim" ] \
-    && curl -fLo "$DOTFILES/nvim/autoload/plug.vim" --create-dirs \
+[ ! -f "$HOME/dotfiles/nvim/autoload/plug.vim" ] \
+    && curl -fLo "$HOME/dotfiles/nvim/autoload/plug.vim" --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
-mkdir -p "$XDG_CONFIG_HOME/nvim/autoload"
-ln -sf "$DOTFILES/nvim/autoload/plug.vim" "$XDG_CONFIG_HOME/nvim/autoload/plug.vim"
+mkdir -p "$HOME/.config/nvim/autoload"
+ln -sf "$HOME/dotfiles/nvim/autoload/plug.vim" "$HOME/.config/nvim/autoload/plug.vim"
 
 # Install (or update) all the plugins
 nvim --noplugin +PlugUpdate +qa
@@ -27,41 +27,41 @@ nvim --noplugin +PlugUpdate +qa
 # i3 #
 ######
 
-rm -rf "$XDG_CONFIG_HOME/i3"
-ln -s "$DOTFILES/i3" "$XDG_CONFIG_HOME"
+rm -rf "$HOME/.config/i3"
+ln -s "$HOME/dotfiles/i3" "$HOME/.config"
 
 #######
 # Zsh #
 #######
 
-mkdir -p "$XDG_CONFIG_HOME/zsh"
-ln -sf "$DOTFILES/zsh/.zshenv" "$HOME"
-ln -sf "$DOTFILES/zsh/.zshrc" "$XDG_CONFIG_HOME/zshg
-gn -sf "$DOTFILES/zsh/aliases" "$XDG_CONFIG_HOME/zsh/aliases"
-rm -rf "$XDG_CONFIG_HOME/zsh/external"
-ln -sf "$DOTFILES/zsh/external" "$XDG_CONFIG_HOME/zsh"
+mkdir -p "$HOME/.config/zsh"
+ln -sf "$HOME/dotfiles/zsh/.zshenv" "$HOME"
+ln -sf "$HOME/dotfiles/zsh/.zshrc" "$HOME/.config/zshg
+gn -sf "$HOME/dotfiles/zsh/aliases" "$HOME/.config/zsh/aliases"
+rm -rf "$HOME/.config/zsh/external"
+ln -sf "$HOME/dotfiles/zsh/external" "$HOME/.config/zsh"
 
 #########
 # Fonts #
 #########
 
 mkdir -p "$XDG_DATA_HOME"
-cp -rf "$DOTFILES/fonts" "$XDG_DATA_HOME"
+cp -rf "$HOME/dotfiles/fonts" "$XDG_DATA_HOME"
 
 #########
 # dunst #
 #########
 
-mkdir -p "$XDG_CONFIG_HOME/dunst"
-ln -sf "$DOTFILES/dunst/dunstrc" "$XDG_CONFIG_HOME/dunst/dunstrc"
+mkdir -p "$HOME/.config/dunst"
+ln -sf "$HOME/dotfiles/dunst/dunstrc" "$HOME/.config/dunst/dunstrc"
 
 ########
 # tmux #
 ########
 
-mkdir -p "$XDG_CONFIG_HOME/tmux"
-ln -sf "$DOTFILES/tmux/tmux.conf" "$XDG_CONFIG_HOME/tmux/tmux.conf"
+mkdir -p "$HOME/.config/tmux"
+ln -sf "$HOME/dotfiles/tmux/tmux.conf" "$HOME/.config/tmux/tmux.conf"
 
-[ ! -d "$XDG_CONFIG_HOME/tmux/plugins" ] \
+[ ! -d "$HOME/.config/tmux/plugins" ] \
 && git clone https://github.com/tmux-plugins/tpm \
-"$XDG_CONFIG_HOME/tmux/plugins/tpm"
+"$HOME/.config/tmux/plugins/tpm"
