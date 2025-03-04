@@ -37,11 +37,13 @@ set hidden
 call plug#begin("XDG_CONFIG_HOME/nvim/plugged")
     Plug 'chrisbra/csv.vim'
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
-    Plug 'ms-jpq/chadtree', {'branch': 'chad', 'do': 'python3 -m chadtree deps'}
     Plug 'wellle/tmux-complete.vim'
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
+    Plug 'lervag/vimtex'
 call plug#end()
 
 autocmd BufRead,BufWritePost *.csv :%ArrangeColumn!
 autocmd BufWritePre *.csv :%UnArrangeColumn
+
+let g:vimtex_view_method = 'zathura'
