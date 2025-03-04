@@ -46,4 +46,13 @@ call plug#end()
 autocmd BufRead,BufWritePost *.csv :%ArrangeColumn!
 autocmd BufWritePre *.csv :%UnArrangeColumn
 
+" vimtex settings
 let g:vimtex_view_method = 'zathura'
+let g:vimtex_indent_on = 1
+let g:vimtex_syntax_enabled = 1
+let g:vimtex_complete_enabled = 1
+
+nnoremap <leader>ll :VimtexCompile<CR> " compile document
+nnoremap <leader>lv :VimtexView<CR> " View the PDF
+nnoremap <leader>lt :VimtexTocToggle<CR> " toggle table of contents
+
