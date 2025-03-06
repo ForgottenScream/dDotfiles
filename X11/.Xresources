@@ -44,7 +44,7 @@ URxvt*scrollBar: false
 URxvt*saveLines: 5000 
 
 ! Enable 256 colors
-URxvt*termName: urxvt
+URxvt*termName: rxvt-unicode-256color
 URxvt*colorMode: true
 URxvt*perl-ext-common: default,matcher
 URxvt*matcher.button: 1
