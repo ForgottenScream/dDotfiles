@@ -38,9 +38,10 @@ call plug#begin("XDG_CONFIG_HOME/nvim/plugged")
     Plug 'chrisbra/csv.vim'
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'wellle/tmux-complete.vim'
-    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-    Plug 'junegunn/fzf.vim'
     Plug 'lervag/vimtex'
+    Plug 'nvim-lua/plenary.nvim' 
+    Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.8' } " or
+                                        , { 'branch': '0.1.x' }
 call plug#end()
 
 autocmd BufRead,BufWritePost *.csv :%ArrangeColumn!
