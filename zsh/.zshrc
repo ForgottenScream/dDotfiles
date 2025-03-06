@@ -52,15 +52,14 @@ if [ $(command -v "fzf") ]; then
     source /usr/share/fzf/key-bindings.zsh
 fi
 
-# Change this to not autostart on tty1
-if [ "$(tty)" = "/dev/tty1" ];
+# Change this to not autostart on tty2
+if [ "$(tty)" = "/dev/tty2" ];
 then
     pgrep i3 || exec startx "$XDG_CONFIG_HOME/X11/.xinitrc"
 fi
+[ -f "/home/n/.ghcup/env" ] && . "/home/n/.ghcup/env" # ghcup-env
 
 ###################################################################
 #Needs to be sourced last so everything else needs to be above ^^^#
 ###################################################################
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-[ -f "/home/n/.ghcup/env" ] && . "/home/n/.ghcup/env" # ghcup-env

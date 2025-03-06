@@ -5,6 +5,12 @@ compress() {
     tar cvzf $1.tar.gz $1
 }
 
+#lynx
+ddg() {
+    lynx -vikeys "https://lite.duckduckgo.com/lite/?q='$@'"
+}
+
+#for tmux
 ftmuxp() {
     if [[ -n $TMUX ]]; then
         return
