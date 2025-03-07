@@ -1,8 +1,6 @@
 #!/usr/bin/env zsh
 source "$XDG_CONFIG_HOME/zsh/aliases"
 
-export TERM=rxvt-unicode-256color
-
 setopt AUTO_PARAM_SLASH
 unsetopt CASE_GLOB
 
