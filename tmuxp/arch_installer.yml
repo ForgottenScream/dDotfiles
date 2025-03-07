@@ -1,5 +1,5 @@
 session_name: arch_installer
-start_directory: $HOME/workspace/arch_installer
+start_directory: $HOME/workstation/arch_installer
 
 windows:
   - window_name: nvim arch_installer
