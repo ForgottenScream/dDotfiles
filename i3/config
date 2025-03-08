@@ -73,21 +73,21 @@ set $terminal "1: Terminal"
 set $browser "2: Browser"
 set $communication "3: Communication"
 set $code "4: Code"
-set $tv "5: TV"
+set $media "5: Media"
 
 # switch to workspace
 bindsym $mod+1 workspace $terminal
 bindsym $mod+2 workspace $browser
 bindsym $mod+3 workspace $communication
 bindsym $mod+4 workspace $code
-bindsym $mod+5 workspace $tv
+bindsym $mod+5 workspace $media
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace $terminal
 bindsym $mod+Shift+2 move container to workspace $browser
 bindsym $mod+Shift+3 move container to workspace $communication
 bindsym $mod+Shift+4 move container to workspace $code
-bindsym $mod+Shift+5 move container to workspace $tv
+bindsym $mod+Shift+5 move container to workspace $media
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
