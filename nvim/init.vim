@@ -30,7 +30,12 @@ set expandtab
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
-
+set number = true
+set relativenumber
+set smartindent
+set hlsearch
+set incsearch
+set termguicolors
 set hidden
 
 " Plugins 
