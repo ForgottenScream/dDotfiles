@@ -36,7 +36,7 @@ URxvt*color7: #e4e4e4
 URxvt*color15: #ffffff 
 
 ! Font and Borders
-URxvt*font: xft:Inconsolata Nerd Font Mono:style=Medium:size=16 
+URxvt*font: xft:Hack Nerd Font Mono:style=Medium:size=16 
 URxvt*borderLess: false 
 URxvt*externalBorder: 0 
 URxvt*internalBorder: 4 
