@@ -45,8 +45,8 @@ ln -sf "$HOME/dotfiles/zsh/external" "$HOME/.config/zsh"
 # Fonts #
 #########
 
-mkdir -p "$XDG_DATA_HOME"
-cp -rf "$HOME/dotfiles/fonts" "$XDG_DATA_HOME"
+# mkdir -p "$XDG_DATA_HOME"
+# cp -rf "$HOME/dotfiles/fonts" "$XDG_DATA_HOME"
 
 #########
 # dunst #
